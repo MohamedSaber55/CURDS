@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    
+    
+
+    <div class="w-75 mx-auto py-3">
+
+        <h3 class="fw-bolder my-2">Product Management System</h3>
+
+        <label for="productNameInput">ProductName :</label>
+        <input type="text" class="form-control mb-3" id="productNameInput">
+
+        <label for="ProductPriceInput">ProductPrice :</label>
+        <input type="number" class="form-control mb-3" id="productPriceInput">
+
+        <label for="ProductCategoryInput">ProductCategory :</label>
+        <input type="text" class="form-control mb-3" id="productCategoryInput">
+
+        <label for="ProductDescInput">ProductDesc :</label>
+        <textarea type="text" class="form-control mb-3" id="productDescInput"></textarea>
+        <button class="btn btn-info" id="maimBtn">add Product</button>
+        <div class="searcharea my-5">
+            <input type="text" oninput="searchProduct(this.value)" placeholder="Search" class="form-control w-50 m-auto" id="searcharea">
+        </div>
+
+    </div>
+
+    <table class="table w-75 mx-auto my-4">
+        <thead>
+            <th>Index</th>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductCategory</th>
+            <th>ProductDesc</th>
+            <th>update</th>
+            <th>delete</th>
+
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

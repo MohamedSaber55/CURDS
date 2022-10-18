@@ -1,0 +1,119 @@
+body
+{
+    font-family: 'segoe ui light';
+}
+header
+{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.color-main
+{
+    color: #ff206e !important;
+}
+header h1
+{
+    font-size: 48px;
+    font-weight: 900;
+}
+.icon
+{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: solid 1px rgba(255,255,255,0.5);
+    margin: 4px;
+}
+.social-panel a
+{
+    color: #Fff;
+}
+.title
+{
+    padding: 50px 0px;
+}
+
+.title h2
+{
+    font-size: 80px;
+    font-weight: 900;
+    color: #f1f1f1;
+}
+.title h3
+{
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+}
+
+#about
+{
+    background-image: url(../images/light_dot.jpg);
+}
+
+.client-img
+{
+    width: 85px;
+    border-radius: 50%;
+    border: solid 3px #f4f4f4;   
+    transform: translateY(50%);
+}
+.client-feedback
+{
+    border: 2px solid #f4f4f4 ;
+}
+.client-feedback h5
+{
+    margin-top: 40px;
+}
+.brdr
+{
+    height: 1px;
+    width: 7%;
+    background-color: #ff206e;
+    margin: auto;
+}
+
+.carousel-indicators li
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent: 0;
+}
+.carousel-indicators .active
+{
+    opacity: 0.7;
+}
+.item
+{
+    margin: 15px 0px;
+}
+.item-layer
+{
+    background-color: #fff;
+    opacity: 0;
+    width: 90%;
+    left: 5%;
+    top: 0;
+    height: 0%;
+    transition: opacity 0.7s , height 0.7s;
+
+}
+.layer-content
+{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.item:hover .item-layer
+{
+    opacity: 0.94;
+    height: 95%;
+}
+.item:hover .layer-content
+{
+    opacity: 1;
+}
